@@ -9,14 +9,14 @@ import {Main} from './Components/Main';
 let startTimeInterval;
 export function MusicScreen({navigation}) {
   useEffect(() => {
-    TrackPlayer.setupPlayer().then(() => {});
+    // TrackPlayer.setupPlayer().then(() => {});
     TrackPlayer.add([track]).then(function () {});
   }, []);
 
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: 'rgba(255, 165, 0,1)'}}>
       <View style={styles.main}>
-        <Header navigation={navigation} title={'animation 1'} />
+        <Header navigation={navigation} title={'animation 4'} />
         <Main />
       </View>
     </SafeAreaView>

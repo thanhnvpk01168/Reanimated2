@@ -13,7 +13,7 @@ export function Heart({navigation}) {
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: 'rgba(255, 165, 0,1)'}}>
       <View style={styles.main}>
-        <Header navigation={navigation} title={'animation 1'} />
+        <Header navigation={navigation} title={'animation 5'} />
         <View style={styles.container}>
           {arrayHeart.map((item, index) => {
             return (

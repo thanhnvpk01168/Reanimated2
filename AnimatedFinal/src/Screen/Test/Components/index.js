@@ -1,3 +1,1 @@
-
-export * from './RenderItem'
-export * from './RenderItemBackground'
+export * from './Slide'

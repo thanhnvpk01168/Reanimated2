@@ -44,6 +44,7 @@ export function BottomTab({navigation}) {
 
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: 'rgba(255, 165, 0,1)'}}>
+   
       <View style={styles.main}>
         <Header navigation={navigation} title={'animation 2'} />
         <AnimatedFlatList

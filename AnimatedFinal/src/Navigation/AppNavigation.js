@@ -11,6 +11,8 @@ import {HeaderAnimation} from '../Screen/HeaderAnimation';
 import {MusicScreen} from '../Screen/Music';
 import {Heart} from '../Screen/Heart';
 import {Card1} from '../Screen/Card1';
+import {Movies} from '../Screen/Movies';
+import {TestBottomSheet} from '../Screen/BottomSheet';
 import {Test} from '../Screen/Test';
 
 const Stack = createStackNavigator();
@@ -31,6 +33,8 @@ export default function AppNavigation() {
         <Stack.Screen name="MusicScreen" component={MusicScreen} />
         <Stack.Screen name="Heart" component={Heart} />
         <Stack.Screen name="Card1" component={Card1} />
+        <Stack.Screen name="Movies" component={Movies} />
+        <Stack.Screen name="BottomSheet" component={TestBottomSheet} />
         <Stack.Screen name="Test" component={Test} />
       </Stack.Navigator>
     </NavigationContainer>

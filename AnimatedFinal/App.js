@@ -14,12 +14,14 @@ function App() {
   }, []);
   return (
     // <SafeAreaView style={{flex: 1, backgroundColor: 'rgba(255, 165, 0,1)'}}>
-    <SafeAreaProvider>
+    // <SafeAreaProvider>
+    <>
       <StatusBar translucent backgroundColor={'rgba(255, 165, 0,1)'} />
       <StoreProvider store={store}>
         <AppNavigation />
       </StoreProvider>
-    </SafeAreaProvider>
+    </>
+    // </SafeAreaProvider>
     // </SafeAreaView>
   );
 }

@@ -3,7 +3,6 @@ import {StyleSheet, View, Text} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 
 import {Ionicons} from '../../Assets/VectorIcons/Icons';
-
 export function Header({navigation, title}) {
   return (
     <View style={styles.main}>
@@ -30,7 +29,7 @@ const styles = StyleSheet.create({
   main: {
     overflow: 'hidden',
     paddingBottom: 5,
-    zIndex:10
+    // zIndex: 10,
   },
   container: {
     paddingBottom: 5,

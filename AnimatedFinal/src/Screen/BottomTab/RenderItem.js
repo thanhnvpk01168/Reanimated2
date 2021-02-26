@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useCallback} from 'react';
 import {StyleSheet, Dimensions, View, Text} from 'react-native';
 import Animated, {
   Easing,
@@ -18,6 +18,7 @@ import {AntDesign, FontAwesome} from '../../Assets/VectorIcons/Icons';
 import {colorRenderTabs} from './Asset';
 
 const AnimatedView = Animated.createAnimatedComponent(View);
+const {width} = Dimensions.get('screen');
 export const RenderItem = React.memo(
   ({Item, index, startAnimBlloons, checkedTab, flatListTab}) => {
     const [positionTabIcon, setPositionTabIcon] = useState({x: 0, width: 0});
@@ -43,9 +44,9 @@ export const RenderItem = React.memo(
 
     useEffect(() => {
       if (Item.id == checkedTab) {
-        startAnimTab(-10);
+        startAnimTab(-14);
       } else {
-        startAnimTab(17);
+        startAnimTab(12);
       }
     }, [checkedTab]);
     return (
@@ -55,6 +56,7 @@ export const RenderItem = React.memo(
         }}
         style={[styles.viewTab, animTabStyle]}>
         <TouchableOpacity
+          style={[styles.btn]}
           activeOpacity={0.6}
           onPress={() => {
             flatListTab.scrollToOffset({
@@ -87,6 +89,10 @@ const styles = StyleSheet.create({
     zIndex: 10,
   },
   titleTab: {
-    paddingTop: 17,
+    marginTop: 5,
+  },
+  btn: {
+    padding: 10,
+    paddingHorizontal: width / 12,
   },
 });
