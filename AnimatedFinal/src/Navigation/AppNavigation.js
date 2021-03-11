@@ -13,6 +13,8 @@ import {Heart} from '../Screen/Heart';
 import {Card1} from '../Screen/Card1';
 import {Movies} from '../Screen/Movies';
 import {TestBottomSheet} from '../Screen/BottomSheet';
+import {SlideScreen} from '../Screen/Slide';
+import {ModalScreen as Modal} from '../Screen/Modal';
 import {Test} from '../Screen/Test';
 
 const Stack = createStackNavigator();
@@ -35,6 +37,8 @@ export default function AppNavigation() {
         <Stack.Screen name="Card1" component={Card1} />
         <Stack.Screen name="Movies" component={Movies} />
         <Stack.Screen name="BottomSheet" component={TestBottomSheet} />
+        <Stack.Screen name="SlideScreen" component={SlideScreen} />
+        <Stack.Screen name="Modal" component={Modal} />
         <Stack.Screen name="Test" component={Test} />
       </Stack.Navigator>
     </NavigationContainer>

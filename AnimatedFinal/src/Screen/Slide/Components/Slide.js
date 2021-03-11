@@ -14,7 +14,15 @@ import Animated, {
 const {width} = Dimensions.get('screen');
 const AnimatedFlatList = Animated.createAnimatedComponent(FlatList);
 const AnimatedView = Animated.createAnimatedComponent(View);
-export const Slide = ({navigation, data = [1, 2, 3, 4, 5, 6]}) => {
+const data = [
+  require('../../../Assets/Images/slide6.jpeg'),
+  require('../../../Assets/Images/slide1.jpg'),
+  require('../../../Assets/Images/slide2.png'),
+  require('../../../Assets/Images/slide3.jpg'),
+  require('../../../Assets/Images/slide4.jpg'),
+  require('../../../Assets/Images/slide5.jpg'),
+];
+export const Slide = ({navigation}) => {
   const scrollX = useSharedValue(0);
   const scrollHandler = useAnimatedScrollHandler({
     onScroll: (event) => {
@@ -46,10 +54,7 @@ export const Slide = ({navigation, data = [1, 2, 3, 4, 5, 6]}) => {
               }}>
               <FastImage
                 resizeMode={FastImage.resizeMode.scale}
-                source={{
-                  uri:
-                    'https://lh33.googleusercontent.com/proxy/iLSKs8eNcqY6TC7LS1uHyDRlsa84Or8fdA_QQjIRNXkdc_omUwMEnOQLIhUXN-nC0-NZdfKF8-M5mbKCMsO3nNGiYXF1pdw9k2-4TrCzS0xxPm5A5Vg',
-                }}
+                source={item}
                 style={styles.img}
               />
             </View>

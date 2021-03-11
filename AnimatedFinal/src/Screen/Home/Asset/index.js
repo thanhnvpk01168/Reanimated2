@@ -7,7 +7,9 @@ const arrayScreens = [
   {name: 'List card visa', screen: 'Card1'},
   {name: 'Movies', screen: 'Movies'},
   {name: 'BottomSheet', screen: 'BottomSheet'},
-  {name: 'slide', screen: 'Test'},
+  {name: 'Slide', screen: 'SlideScreen'},
+  {name: 'Modal', screen: 'Modal'},
+  {name: 'Test', screen: 'Test'},
 ];
 
 export {arrayScreens};
