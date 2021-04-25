@@ -16,6 +16,9 @@ import {TestBottomSheet} from '../Screen/BottomSheet';
 import {SlideScreen} from '../Screen/Slide';
 import {ModalScreen as Modal} from '../Screen/Modal';
 import {Test} from '../Screen/Test';
+import {Chart} from '../Screen/Chart';
+import {Loading1} from '../Screen/Loading1';
+import {Loading2} from '../Screen/Loading2';
 
 const Stack = createStackNavigator();
 
@@ -39,7 +42,10 @@ export default function AppNavigation() {
         <Stack.Screen name="BottomSheet" component={TestBottomSheet} />
         <Stack.Screen name="SlideScreen" component={SlideScreen} />
         <Stack.Screen name="Modal" component={Modal} />
+        <Stack.Screen name="Chart" component={Chart} />
         <Stack.Screen name="Test" component={Test} />
+        <Stack.Screen name="Loading1" component={Loading1} />
+        <Stack.Screen name="Loading2" component={Loading2} />
       </Stack.Navigator>
     </NavigationContainer>
   );

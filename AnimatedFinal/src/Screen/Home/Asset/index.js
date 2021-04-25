@@ -9,6 +9,9 @@ const arrayScreens = [
   {name: 'BottomSheet', screen: 'BottomSheet'},
   {name: 'Slide', screen: 'SlideScreen'},
   {name: 'Modal', screen: 'Modal'},
+  {name: 'Chart', screen: 'Chart'},  
+  {name: 'Loading 1', screen: 'Loading1'},
+  {name: 'Loading 2', screen: 'Loading2'},
   {name: 'Test', screen: 'Test'},
 ];
 
