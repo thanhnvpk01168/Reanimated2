@@ -1,6 +1,6 @@
 import { range, random } from "lodash";
 
-export const getData = () =>
+export const getData = () =>b1
   range(1, 10).map(i => ({ x: i, y: random(1, 10) }));
 
 export const getBoxPlotData = () =>
