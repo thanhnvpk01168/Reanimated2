@@ -24,7 +24,7 @@ let abc = 0;
 export function Test() {
   const inputRef = useRef();
   const animValue = useSharedValue(100);
-  const circumference = useAnimatedProps(() => ({
+  const circumference = useAnimatedProps(() => ({b1
     strokeDashoffset: animValue.value,
   }));
   //countdown
